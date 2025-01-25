@@ -66,7 +66,4 @@ For Software:
 
 
 
-https://github.com/user-attachments/assets/c915c616-304d-493c-923a-2ca463b4642d
-
-
 Made with ❤️ at TinkerHub
