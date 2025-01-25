@@ -4,7 +4,6 @@
 ## Basic Details
 ### Team Name: DRD
 
-
 ### Team Members
 - Member 1: Drishya P Ramesh - Rajiv Gandhi Institute of Technology
 - Member 2: Riya Lawrance - Rajiv Gandhi Institute of Technology
