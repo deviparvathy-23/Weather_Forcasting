@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <style>
+        body {
+            background-image: url('worldimg.jpg'); 
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+            color: #fff; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        #app-container {
+            background-color: #000000ac;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 350px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        input {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #weatherResult {
+            margin-top: 20px;
+            font-size: 16px;
+            color: #ffffffd3;
+        }
+    </style>
+</head>
+<body>
+    <div id="app-container">
+        <h1>Weather Forecast</h1>
+        <input id="cityInput" type="text" placeholder="Enter city name">
+        <button id="fetchButton">Fetch Weather</button>
+        <div id="weatherResult">Weather details will appear here</div>
+    </div>
+    <script>
+        // JavaScript for fetching weather data
+        const fetchButton = document.getElementById('fetchButton');
+        const weatherResult = document.getElementById('weatherResult');
+        const apiKey = '3dbf3e517fd672eeb5a5aeef09e208ef'; // Replace with your OpenWeatherMap API key
+
+        fetchButton.addEventListener('click', () => {
+            const city = document.getElementById('cityInput').value;
+            if (!city) {
+                weatherResult.textContent = 'Please enter a city name.';
+                return;
+            }
+
+            // Fetching weather data from OpenWeatherMap API
+            const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+
+            fetch(apiUrl)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('City not found');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    const temp = data.main.temp;
+                    const description = data.weather[0].description;
+                    const height = (data.main.sea_level-data.main.grnd_level)*8.3;
+                    al = "No Alert";
+                    if(height<300)
+                    {
+                        area = "plain";
+                        if(temp>40)
+                        {
+                            al = "Heat Wave Alert";
+                        }
+                    }
+                    else
+                    {
+                        area = "hilly";
+                        if(temp>30)
+                        {
+                            al = "Heat Wave Alert";
+                        }
+                    }
+                    if(temp>=28 && data.main.humidity>=79)
+                    {
+                        al = "\nchances of rain";
+                    }
+                    weatherResult.innerHTML = `
+                        <p>Temperature: ${temp}°C</p>
+                        <p>Description: ${description}</p>
+                        <p>Region: ${area}</p>
+                        <p>Alert: ${al}</p>
+                    `;
+                })
+                .catch(error => {
+                    weatherResult.textContent = `Failed to fetch weather data: ${error.message}`;
+                });    
+        });
+    </script>
+</body>
+</html>
