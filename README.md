@@ -6,7 +6,7 @@
 
 
 ### Team Members
-- Member 1: Drishya P Ramesh-Rajiv Gandhi Institute of Technology
+- Member 1: Drishya P Ramesh - Rajiv Gandhi Institute of Technology
 - Member 2: Riya Lawrance - Rajiv Gandhi Institute of Technology
 - Member 3: S Devi Parvathy - Rajiv Gandhi Institute of Technology
   
@@ -49,54 +49,15 @@ For Software:
  This Weather App provides real-time weather updates with region classification and alert mechanisms. It utilizes the OpenWeatherMap API for data retrieval and dynamically displays weather information based on user input. The app can be further enhanced with additional features like forecasts and geolocation support.
 
 
-# Screenshots (Add at least 3)
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
+# Screenshots
+![opening page](https://github.com/user-attachments/assets/40da13fd-a59d-4d0e-bd9d-e698b03bb1db)
+*The opening page of the website with user friendly design*
 
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
+![entering city](https://github.com/user-attachments/assets/a2b54c7c-01e8-49d7-877f-37db0012ab4f)
+*The suggestion according to your previous search results*
 
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
-
-# Diagrams
-![Workflow](Add your workflow/architecture diagram here)
-*Add caption explaining your workflow*
-
-For Hardware:
-
-# Schematic & Circuit
-![Circuit](Add your circuit diagram here)
-*Add caption explaining connections*
-
-![Schematic](Add your schematic diagram here)
-*Add caption explaining the schematic*
-
-# Build Photos
-![Team](Add photo of your team here)
-
-
-![Components](Add photo of your components here)
-*List out all components shown*
-
-![Build](Add photos of build process here)
-*Explain the build steps*
-
-![Final](Add photo of final product here)
-*Explain the final build*
-
-### Project Demo
-# Video
-[Add your demo video link here]
-*Explain what the video demonstrates*
-
-# Additional Demos
-[Add any extra demo materials/links]
-
-## Team Contributions
-- [Name 1]: [Specific contributions]
-- [Name 2]: [Specific contributions]
-- [Name 3]: [Specific contributions]
+![opening page](https://github.com/user-attachments/assets/60a48df0-2327-4f12-8696-59c89ad01b9e)
+*The page showing the weather of the requested place*
 
 ---
 Made with ❤️ at TinkerHub
