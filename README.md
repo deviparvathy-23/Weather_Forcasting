@@ -1,4 +1,4 @@
-# Weather Forcaster 🎯
+# Weather Forecaster 🎯
 
 
 ## Basic Details
