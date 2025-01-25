@@ -8,6 +8,9 @@
 - Member 1: Drishya P Ramesh - Rajiv Gandhi Institute of Technology
 - Member 2: Riya Lawrance - Rajiv Gandhi Institute of Technology
 - Member 3: S Devi Parvathy - Rajiv Gandhi Institute of Technology
+
+### Hosted Project Link
+https://deviparvathy-23.github.io/Weather_Forecasting/weather.html
   
 ### Project Description
 This is a project which is used to determine the weather conditions of a particular city such as temperature, cloud description, region and provide necessary alerts for heatwaves and rain.
